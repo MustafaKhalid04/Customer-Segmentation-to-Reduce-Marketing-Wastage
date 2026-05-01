@@ -1,8 +1,14 @@
 📊 Customer Segmentation to Reduce Marketing Wastage
+
+--
 🔍 Project Overview
 This project uses the Customer Personality Analysis dataset from Kaggle to build actionable customer personas and optimize marketing strategy.
+
+--
 Business Objective:
 Identify who to target, where to target them, and what offer to use in order to reduce marketing wastage and improve campaign ROI.
+
+--
 This project is designed for roles such as:
 Market Analyst
 Consumer Insight Analyst
