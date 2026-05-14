@@ -1,6 +1,28 @@
-📊 Customer Segmentation to Reduce Marketing Wastage
-🧾 Project Summary
-This project uses the Kaggle Customer Personality Analysis dataset to build consumer personas and improve marketing campaign targeting.
+Customer Segmentation to Reduce Marketing Wastage
+SQL + Excel Consumer Insight Case Study
+This project uses the Kaggle Customer Personality Analysis dataset to build customer personas and recommend more efficient campaign targeting.
+
+The main business question is:
+
+How can customer segmentation help reduce ad wastage and improve campaign ROI by identifying who to target, where to target them, and what offer to use?
+
+The project is designed as a portfolio-ready case study for Market Analyst, Consumer Insight Analyst, and Consumer Behavior Analyst roles.
+
+
+
+Executive Summary
+The analysis identified three customer personas:
+
+Persona	Customer Count	Avg Spend	Campaign Response	Main Channel Signal	Discount Sensitivity	Campaign Decision
+Premium Omnichannel Buyers	925	1193.46	42.5%	Strong store/catalog behavior	11.2% deal share	Prioritize
+Deal-Driven Digital Browsers	435	358.05	32.4%	Strong web behavior	37.7% deal share	Target selectively
+Low-Engagement Occasional Buyers	853	98.05	8.2%	Low purchase activity	32.7% deal share	Suppress from expensive campaigns
+Final recommendation:
+Prioritize Premium Omnichannel Buyers for premium campaigns, target Deal-Driven Digital Browsers with controlled digital offers, and reduce spend on Low-Engagement Occasional Buyers because they show the highest ad wastage risk.
+
+
+
+
 🎯 Business Goal
 Reduce advertising wastage and improve ROI by identifying:
 Who to target
