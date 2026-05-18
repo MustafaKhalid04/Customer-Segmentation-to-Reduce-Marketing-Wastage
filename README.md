@@ -86,7 +86,7 @@ Key metrics:
 
 ### Spend Comparison
 
-![Average Spend](figures/avg_spend_by_persona.svg)
+![image alt](https://github.com/MustafaKhalid04/Customer-Segmentation-to-Reduce-Marketing-Wastage/blob/25d51861063b97aabd2584cb90a04b82072f3f34/avg_spend_by_persona.svg)
 
 **Insight:**  
 Premium customers spend **3–12x more** than other groups.
@@ -95,7 +95,7 @@ Premium customers spend **3–12x more** than other groups.
 
 ### Product Preferences
 
-![Product Spend](figures/product_spend_by_persona.svg)
+![image alt](https://github.com/MustafaKhalid04/Customer-Segmentation-to-Reduce-Marketing-Wastage/blob/25d51861063b97aabd2584cb90a04b82072f3f34/product_spend_by_persona.svg)
 
 **Insight:**  
 Premium buyers dominate across all categories → ideal for **bundling & upselling**
@@ -104,7 +104,7 @@ Premium buyers dominate across all categories → ideal for **bundling & upselli
 
 ### Campaign Response
 
-![Campaign Response](figures/campaign_response_by_persona.svg)
+![image alt](https://github.com/MustafaKhalid04/Customer-Segmentation-to-Reduce-Marketing-Wastage/blob/25d51861063b97aabd2584cb90a04b82072f3f34/campaign_response_by_persona.svg)
 
 **Insight:**
 - Premium = strongest response  
