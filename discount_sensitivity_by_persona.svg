@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470">
+    <rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="36" y="42" font-size="28" font-weight="800" fill="#111827">Discount Sensitivity by Persona</text>
+    <text x="36" y="68" font-size="16" fill="#6b7280">Deal purchase share indicates promotion dependency.</text>
+    <line x1="85" y1="345" x2="854" y2="345" stroke="#d1d5db"/>
+    <line x1="85" y1="78" x2="85" y2="345" stroke="#d1d5db"/>
+    
+      <rect x="138.82999999999998" y="112.82608695652175" width="148.67333333333332" height="232.17391304347825" fill="#2563eb" rx="4"/>
+      <text x="213.16666666666663" y="102.82608695652175" text-anchor="middle" font-size="17" font-weight="700" fill="#111827">37.7%</text>
+      <text x="213.16666666666663" y="381" text-anchor="middle" font-size="15" fill="#374151">Deal-Driven</text><text x="213.16666666666663" y="401" text-anchor="middle" font-size="15" fill="#374151">Digital</text><text x="213.16666666666663" y="421" text-anchor="middle" font-size="15" fill="#374151">Browsers</text>
+    
+      <rect x="395.1633333333333" y="143.61838311613423" width="148.67333333333332" height="201.38161688386577" fill="#f59e0b" rx="4"/>
+      <text x="469.49999999999994" y="133.61838311613423" text-anchor="middle" font-size="17" font-weight="700" fill="#111827">32.7%</text>
+      <text x="469.49999999999994" y="381" text-anchor="middle" font-size="15" fill="#374151">Low-Engagement</text><text x="469.49999999999994" y="401" text-anchor="middle" font-size="15" fill="#374151">Occasional</text><text x="469.49999999999994" y="421" text-anchor="middle" font-size="15" fill="#374151">Buyers</text>
+    
+      <rect x="651.4966666666667" y="276.025256602468" width="148.67333333333332" height="68.97474339753201" fill="#16a34a" rx="4"/>
+      <text x="725.8333333333334" y="266.025256602468" text-anchor="middle" font-size="17" font-weight="700" fill="#111827">11.2%</text>
+      <text x="725.8333333333334" y="381" text-anchor="middle" font-size="15" fill="#374151">Premium</text><text x="725.8333333333334" y="401" text-anchor="middle" font-size="15" fill="#374151">Omnichannel</text><text x="725.8333333333334" y="421" text-anchor="middle" font-size="15" fill="#374151">Buyers</text>
+    
+  </svg>

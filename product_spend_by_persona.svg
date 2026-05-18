@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="500" viewBox="0 0 980 500">
+    <rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="36" y="42" font-size="28" font-weight="800" fill="#111827">Product Spend by Persona</text>
+    <text x="36" y="68" font-size="16" fill="#6b7280">Average category spend confirms the premium value of the top segment.</text>
+    
+    <rect x="740" y="32" width="14" height="14" fill="#2563eb"/>
+    <text x="760" y="44" font-size="15" fill="#374151">Wine</text>
+  
+    <rect x="740" y="56" width="14" height="14" fill="#f59e0b"/>
+    <text x="760" y="68" font-size="15" fill="#374151">Meat</text>
+  
+    <rect x="740" y="80" width="14" height="14" fill="#16a34a"/>
+    <text x="760" y="92" font-size="15" fill="#374151">Gold</text>
+  
+    <line x1="82" y1="372" x2="930" y2="372" stroke="#d1d5db"/>
+    <line x1="82" y1="78" x2="82" y2="372" stroke="#d1d5db"/>
+    <rect x="115.92" y="122.84745762711862" width="55.24848484848484" height="249.15254237288138" fill="#2563eb" rx="3"/><rect x="180.16242424242424" y="227.9616940385052" width="55.24848484848484" height="144.0383059614948" fill="#f59e0b" rx="3"/><rect x="244.40484848484846" y="341.57880180291477" width="55.24848484848484" height="30.421198197085214" fill="#16a34a" rx="3"/><text x="180.16242424242424" y="408" text-anchor="middle" font-size="15" fill="#374151">Premium</text><text x="180.16242424242424" y="428" text-anchor="middle" font-size="15" fill="#374151">Omnichannel</text><text x="180.16242424242424" y="448" text-anchor="middle" font-size="15" fill="#374151">Buyers</text><rect x="398.5866666666667" y="285.9377189381772" width="55.24848484848484" height="86.06228106182277" fill="#2563eb" rx="3"/><rect x="462.82909090909095" y="341.8633467103978" width="55.24848484848484" height="30.136653289602158" fill="#f59e0b" rx="3"/><rect x="527.0715151515152" y="354.768295161541" width="55.24848484848484" height="17.231704838458995" fill="#16a34a" rx="3"/><text x="462.82909090909095" y="408" text-anchor="middle" font-size="15" fill="#374151">Deal-Driven</text><text x="462.82909090909095" y="428" text-anchor="middle" font-size="15" fill="#374151">Digital</text><text x="462.82909090909095" y="448" text-anchor="middle" font-size="15" fill="#374151">Browsers</text><rect x="681.2533333333333" y="354.797586549076" width="55.24848484848484" height="17.202413450923977" fill="#2563eb" rx="3"/><rect x="745.4957575757576" y="362.3087352098419" width="55.24848484848484" height="9.691264790158096" fill="#f59e0b" rx="3"/><rect x="809.7381818181818" y="366.1040621375938" width="55.24848484848484" height="5.895937862406199" fill="#16a34a" rx="3"/><text x="745.4957575757576" y="408" text-anchor="middle" font-size="15" fill="#374151">Low-Engagement</text><text x="745.4957575757576" y="428" text-anchor="middle" font-size="15" fill="#374151">Occasional</text><text x="745.4957575757576" y="448" text-anchor="middle" font-size="15" fill="#374151">Buyers</text>
+  </svg>

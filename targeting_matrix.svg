@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1210" height="410" viewBox="0 0 1210 410">
+    <rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="35" y="48" font-size="30" font-weight="900" fill="#111827">Final Campaign Targeting Matrix</text>
+    <text x="35" y="75" font-size="17" fill="#6b7280">The practical answer: who to target, where to target them, and what offer to use.</text>
+    <rect x="35" y="83" width="1135" height="42" fill="#e5eefc"/>
+    <text x="55" y="105" font-size="17" font-weight="900" fill="#111827">Persona</text><text x="280" y="105" font-size="17" font-weight="900" fill="#111827">Target</text><text x="505" y="105" font-size="17" font-weight="900" fill="#111827">Channel</text><text x="730" y="105" font-size="17" font-weight="900" fill="#111827">Offer</text><text x="955" y="105" font-size="17" font-weight="900" fill="#111827">ROI / Wastage</text>
+    
+      <rect x="35" y="130" width="1135" height="72" fill="#f9fafb" stroke="#e5e7eb"/>
+      <text x="55" y="173" font-size="16" font-weight="800" fill="#111827">Premium Omnichannel Buyers</text><text x="280" y="173" font-size="16" font-weight="500" fill="#111827">First priority</text><text x="505" y="173" font-size="16" font-weight="500" fill="#111827">Store + catalog + retargeting</text><text x="730" y="173" font-size="16" font-weight="500" fill="#111827">Premium bundles / loyalty</text><text x="955" y="173" font-size="16" font-weight="500" fill="#111827">Best ROI potential</text>
+    
+      <rect x="35" y="212" width="1135" height="72" fill="#ffffff" stroke="#e5e7eb"/>
+      <text x="55" y="255" font-size="16" font-weight="800" fill="#111827">Deal-Driven Digital Browsers</text><text x="280" y="255" font-size="16" font-weight="500" fill="#111827">Selective</text><text x="505" y="255" font-size="16" font-weight="500" fill="#111827">Web + email</text><text x="730" y="255" font-size="16" font-weight="500" fill="#111827">Limited discounts / value packs</text><text x="955" y="255" font-size="16" font-weight="500" fill="#111827">Medium ROI, margin risk</text>
+    
+      <rect x="35" y="294" width="1135" height="72" fill="#f9fafb" stroke="#e5e7eb"/>
+      <text x="55" y="337" font-size="16" font-weight="800" fill="#111827">Low-Engagement Occasional Buyers</text><text x="280" y="337" font-size="16" font-weight="500" fill="#111827">Low priority</text><text x="505" y="337" font-size="16" font-weight="500" fill="#111827">Low-cost email only</text><text x="730" y="337" font-size="16" font-weight="500" fill="#111827">Win-back only</text><text x="955" y="337" font-size="16" font-weight="500" fill="#111827">Highest wastage risk</text>
+    
+  </svg>

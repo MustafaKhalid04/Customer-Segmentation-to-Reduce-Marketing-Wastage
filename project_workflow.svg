@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1210" height="295" viewBox="0 0 1210 295">
+    <rect width="100%" height="100%" fill="#ffffff"/>
+    <text x="38" y="50" font-size="30" font-weight="900" fill="#111827">Project Workflow</text>
+    <text x="38" y="78" font-size="17" fill="#6b7280">A transparent SQL and Excel workflow from raw data to marketing recommendations.</text>
+    
+      <rect x="38" y="105" width="190" height="132" fill="#ffffff" stroke="#d1d5db" rx="8"/>
+      <text x="54" y="145" font-size="19" font-weight="800" fill="#111827">Raw Customer Data</text>
+      <text x="54" y="181" font-size="15" fill="#374151">Demographics, spend, channel</text>
+      <text x="54" y="204" font-size="15" fill="#374151">s, campaigns</text>
+      <path d="M233 171 L260 171" stroke="#6b7280" stroke-width="3"/><path d="M260 171 L250 164 L250 178 Z" fill="#6b7280"/>
+    
+      <rect x="268" y="105" width="190" height="132" fill="#ffffff" stroke="#d1d5db" rx="8"/>
+      <text x="284" y="145" font-size="19" font-weight="800" fill="#111827">SQL Feature Engineering</text>
+      <text x="284" y="181" font-size="15" fill="#374151">Total spend, purchase shares</text>
+      <text x="284" y="204" font-size="15" fill="#374151">, deal share</text>
+      <path d="M463 171 L490 171" stroke="#6b7280" stroke-width="3"/><path d="M490 171 L480 164 L480 178 Z" fill="#6b7280"/>
+    
+      <rect x="498" y="105" width="190" height="132" fill="#ffffff" stroke="#d1d5db" rx="8"/>
+      <text x="514" y="145" font-size="19" font-weight="800" fill="#111827">Persona Scoring</text>
+      <text x="514" y="181" font-size="15" fill="#374151">Premium, deal-digital, low-e</text>
+      <text x="514" y="204" font-size="15" fill="#374151">ngagement scores</text>
+      <path d="M693 171 L720 171" stroke="#6b7280" stroke-width="3"/><path d="M720 171 L710 164 L710 178 Z" fill="#6b7280"/>
+    
+      <rect x="728" y="105" width="190" height="132" fill="#ffffff" stroke="#d1d5db" rx="8"/>
+      <text x="744" y="145" font-size="19" font-weight="800" fill="#111827">Excel Dashboard</text>
+      <text x="744" y="181" font-size="15" fill="#374151">Charts, tables, targeting ma</text>
+      <text x="744" y="204" font-size="15" fill="#374151">trix</text>
+      <path d="M923 171 L950 171" stroke="#6b7280" stroke-width="3"/><path d="M950 171 L940 164 L940 178 Z" fill="#6b7280"/>
+    
+      <rect x="958" y="105" width="190" height="132" fill="#ffffff" stroke="#d1d5db" rx="8"/>
+      <text x="974" y="145" font-size="19" font-weight="800" fill="#111827">Campaign Action</text>
+      <text x="974" y="181" font-size="15" fill="#374151">Who to target, where, and wh</text>
+      <text x="974" y="204" font-size="15" fill="#374151">at offer</text>
+      
+    
+  </svg>

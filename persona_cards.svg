@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="510" viewBox="0 0 1220 510">
+    <rect width="100%" height="100%" fill="#f9fafb"/>
+    <text x="40" y="48" font-size="30" font-weight="900" fill="#111827">Customer Personas</text>
+    <text x="40" y="75" font-size="17" fill="#6b7280">Three actionable segments for campaign targeting and ad wastage reduction.</text>
+    
+      <rect x="40" y="95" width="345" height="365" fill="#ffffff" stroke="#d1d5db" rx="10"/>
+      <rect x="40" y="95" width="345" height="12" fill="#2563eb" rx="6"/>
+      <text x="64" y="145" font-size="23" font-weight="800" fill="#111827">Premium Omnichannel Buyers</text>
+      <text x="64" y="190" font-size="18" font-weight="700" fill="#2563eb">925 customers</text><text x="64" y="224" font-size="18" font-weight="700" fill="#2563eb">Avg spend: 1193.46</text><text x="64" y="258" font-size="18" font-weight="700" fill="#2563eb">Response: 42.5%</text>
+      <text x="64" y="305" font-size="16" font-weight="800" fill="#111827">Traits</text>
+      <text x="64" y="334" font-size="16" fill="#374151">- High value</text><text x="64" y="361" font-size="16" fill="#374151">- Store/catalog strong</text><text x="64" y="388" font-size="16" fill="#374151">- Low discount dependency</text>
+      <text x="64" y="430" font-size="15" font-weight="700" fill="#111827">Prioritize with premium bundles and loyalty offers</text>
+    
+      <rect x="430" y="95" width="345" height="365" fill="#ffffff" stroke="#d1d5db" rx="10"/>
+      <rect x="430" y="95" width="345" height="12" fill="#f59e0b" rx="6"/>
+      <text x="454" y="145" font-size="23" font-weight="800" fill="#111827">Deal-Driven Digital Browsers</text>
+      <text x="454" y="190" font-size="18" font-weight="700" fill="#f59e0b">435 customers</text><text x="454" y="224" font-size="18" font-weight="700" fill="#f59e0b">Avg spend: 358.05</text><text x="454" y="258" font-size="18" font-weight="700" fill="#f59e0b">Deal share: 37.7%</text>
+      <text x="454" y="305" font-size="16" font-weight="800" fill="#111827">Traits</text>
+      <text x="454" y="334" font-size="16" fill="#374151">- Web-oriented</text><text x="454" y="361" font-size="16" fill="#374151">- Promotion-sensitive</text><text x="454" y="388" font-size="16" fill="#374151">- Moderate response</text>
+      <text x="454" y="430" font-size="15" font-weight="700" fill="#111827">Target selectively with capped discounts</text>
+    
+      <rect x="820" y="95" width="345" height="365" fill="#ffffff" stroke="#d1d5db" rx="10"/>
+      <rect x="820" y="95" width="345" height="12" fill="#16a34a" rx="6"/>
+      <text x="844" y="145" font-size="23" font-weight="800" fill="#111827">Low-Engagement Occasional Buyers</text>
+      <text x="844" y="190" font-size="18" font-weight="700" fill="#16a34a">853 customers</text><text x="844" y="224" font-size="18" font-weight="700" fill="#16a34a">Avg spend: 98.05</text><text x="844" y="258" font-size="18" font-weight="700" fill="#16a34a">Response: 8.2%</text>
+      <text x="844" y="305" font-size="16" font-weight="800" fill="#111827">Traits</text>
+      <text x="844" y="334" font-size="16" fill="#374151">- Low value</text><text x="844" y="361" font-size="16" fill="#374151">- Weak response</text><text x="844" y="388" font-size="16" fill="#374151">- High wastage risk</text>
+      <text x="844" y="430" font-size="15" font-weight="700" fill="#111827">Suppress from expensive campaigns</text>
+    
+  </svg>
