@@ -9,6 +9,8 @@ This project uses the Kaggle **Customer Personality Analysis** dataset to build 
 
 This is a portfolio-ready case study for **Market Analyst**, **Consumer Insight Analyst**, and **Consumer Behavior Analyst** roles.
 
+![image alt](https://github.com/MustafaKhalid04/Customer-Segmentation-to-Reduce-Marketing-Wastage/blob/7a536b1b1a169197d3d4138751c870d8a66abb96/project_workflow.svg)
+
 ![Project Workflow](figures/project_workflow.svg)
 
 ---
