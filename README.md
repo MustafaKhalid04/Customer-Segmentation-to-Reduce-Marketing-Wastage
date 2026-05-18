@@ -115,7 +115,7 @@ Premium buyers dominate across all categories → ideal for **bundling & upselli
 
 ### Channel Behavior
 
-![Channel Preference](figures/channel_preference_by_persona.svg)
+![image alt](https://github.com/MustafaKhalid04/Customer-Segmentation-to-Reduce-Marketing-Wastage/blob/0e272ad36a60892844232509c759e1d29815431b/channel_preference_by_persona.svg)
 
 | Persona | Strongest Channel |
 |--------|------------------|
@@ -127,7 +127,7 @@ Premium buyers dominate across all categories → ideal for **bundling & upselli
 
 ### Discount Sensitivity
 
-![Discount Sensitivity](figures/discount_sensitivity_by_persona.svg)
+![image alt](https://github.com/MustafaKhalid04/Customer-Segmentation-to-Reduce-Marketing-Wastage/blob/0e272ad36a60892844232509c759e1d29815431b/discount_sensitivity_by_persona.svg)
 
 **Insight:**  
 Digital users rely heavily on discounts → margin risk.
