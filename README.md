@@ -11,8 +11,6 @@ This is a portfolio-ready case study for **Market Analyst**, **Consumer Insight 
 
 ![image alt](https://github.com/MustafaKhalid04/Customer-Segmentation-to-Reduce-Marketing-Wastage/blob/7a536b1b1a169197d3d4138751c870d8a66abb96/project_workflow.svg)
 
-![Project Workflow](figures/project_workflow.svg)
-
 ---
 
 ## Executive Summary
@@ -30,7 +28,7 @@ Three customer personas were identified:
 - Selectively target **Deal-Driven Digital Browsers**
 - Reduce spend on **Low-Engagement Occasional Buyers**
 
-![Customer Personas](figures/persona_cards.svg)
+![image alt](https://github.com/MustafaKhalid04/Customer-Segmentation-to-Reduce-Marketing-Wastage/blob/7cb2901f40fb40492f0cd7f1ea84700a435b7ff7/persona_cards.svg)
 
 ---
 
