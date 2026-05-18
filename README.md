@@ -138,6 +138,9 @@ Digital users rely heavily on discounts → margin risk.
 
 ![image alt](https://github.com/MustafaKhalid04/Customer-Segmentation-to-Reduce-Marketing-Wastage/blob/bb38f50b45f6e13ad15ac5f81a30b140202c60e6/response_value_index.svg)
 
-**Final Targeting Mix:**
+
+---
+
+## Final Targeting Mix
 
 ![image alt](https://github.com/MustafaKhalid04/Customer-Segmentation-to-Reduce-Marketing-Wastage/blob/bb38f50b45f6e13ad15ac5f81a30b140202c60e6/targeting_matrix.svg)
