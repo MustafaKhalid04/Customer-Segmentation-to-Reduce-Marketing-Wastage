@@ -1,0 +1,166 @@
+/*
+Customer Segmentation Project (SQLite)
+Dataset: Kaggle Customer Personality Analysis
+Run:
+sqlite3 output/customer_segmentation.db < sql/customer_segmentation_project.sql
+*/
+
+.bail on
+
+-- 1. IMPORT RAW DATA
+
+DROP TABLE IF EXISTS raw_customer;
+
+CREATE TABLE raw_customer (
+    c0 TEXT, c1 TEXT, c2 TEXT, c3 TEXT, c4 TEXT, c5 TEXT, c6 TEXT, c7 TEXT, c8 TEXT, c9 TEXT,
+    c10 TEXT, c11 TEXT, c12 TEXT, c13 TEXT, c14 TEXT, c15 TEXT, c16 TEXT, c17 TEXT, c18 TEXT, c19 TEXT,
+    c20 TEXT, c21 TEXT, c22 TEXT, c23 TEXT, c24 TEXT, c25 TEXT, c26 TEXT, c27 TEXT, c28 TEXT
+);
+
+.mode tabs
+.separator "\t"
+.import --skip 1 data/marketing_campaign.csv raw_customer
+
+
+-- 2. CLEAN DATA + FEATURES
+
+DROP TABLE IF EXISTS customer_features;
+
+CREATE TABLE customer_features AS
+SELECT
+    CAST(c0 AS INTEGER) AS ID,
+    CAST(c1 AS INTEGER) AS Year_Birth,
+    c2 AS Education,
+    c3 AS Marital_Status,
+    CAST(c4 AS REAL) AS Income,
+    CAST(c5 AS INTEGER) AS Kidhome,
+    CAST(c6 AS INTEGER) AS Teenhome,
+    c7 AS Dt_Customer,
+    CAST(c8 AS INTEGER) AS Recency,
+    CAST(c9 AS INTEGER) AS MntWines,
+    CAST(c10 AS INTEGER) AS MntFruits,
+    CAST(c11 AS INTEGER) AS MntMeatProducts,
+    CAST(c12 AS INTEGER) AS MntFishProducts,
+    CAST(c13 AS INTEGER) AS MntSweetProducts,
+    CAST(c14 AS INTEGER) AS MntGoldProds,
+    CAST(c15 AS INTEGER) AS NumDealsPurchases,
+    CAST(c16 AS INTEGER) AS NumWebPurchases,
+    CAST(c17 AS INTEGER) AS NumCatalogPurchases,
+    CAST(c18 AS INTEGER) AS NumStorePurchases,
+    CAST(c19 AS INTEGER) AS NumWebVisitsMonth,
+    CAST(c20 AS INTEGER) AS AcceptedCmp3,
+    CAST(c21 AS INTEGER) AS AcceptedCmp4,
+    CAST(c22 AS INTEGER) AS AcceptedCmp5,
+    CAST(c23 AS INTEGER) AS AcceptedCmp1,
+    CAST(c24 AS INTEGER) AS AcceptedCmp2,
+    CAST(c25 AS INTEGER) AS Complain,
+    CAST(c26 AS INTEGER) AS Z_CostContact,
+    CAST(c27 AS INTEGER) AS Z_Revenue,
+    CAST(c28 AS INTEGER) AS Response,
+
+    2026 - CAST(c1 AS INTEGER) AS Age,
+    CAST(c5 AS INTEGER) + CAST(c6 AS INTEGER) AS Children_Home,
+
+    CAST(c9 AS INTEGER) + CAST(c10 AS INTEGER) + CAST(c11 AS INTEGER) +
+    CAST(c12 AS INTEGER) + CAST(c13 AS INTEGER) + CAST(c14 AS INTEGER) AS Total_Spend,
+
+    CAST(c16 AS INTEGER) + CAST(c17 AS INTEGER) + CAST(c18 AS INTEGER) AS Total_Purchases,
+
+    CAST(c23 AS INTEGER) + CAST(c24 AS INTEGER) + CAST(c20 AS INTEGER) +
+    CAST(c21 AS INTEGER) + CAST(c22 AS INTEGER) + CAST(c28 AS INTEGER) AS Total_Accepted_Campaigns
+FROM raw_customer
+WHERE c4 IS NOT NULL
+  AND c4 <> ''
+  AND CAST(c1 AS INTEGER) BETWEEN 1926 AND 2008;
+
+
+-- 3. PERSONA SCORING
+
+DROP TABLE IF EXISTS customer_scored;
+
+CREATE TABLE customer_scored AS
+WITH base AS (
+    SELECT
+        *,
+        CASE WHEN Total_Purchases > 0 THEN 1.0 * NumDealsPurchases / Total_Purchases ELSE 0 END AS Deal_Share,
+        CASE WHEN Total_Purchases > 0 THEN 1.0 * NumWebPurchases / Total_Purchases ELSE 0 END AS Web_Share,
+        CASE WHEN Total_Purchases > 0 THEN 1.0 * NumCatalogPurchases / Total_Purchases ELSE 0 END AS Catalog_Share,
+        CASE WHEN Total_Purchases > 0 THEN 1.0 * NumStorePurchases / Total_Purchases ELSE 0 END AS Store_Share,
+        CASE WHEN Total_Accepted_Campaigns > 0 THEN 1 ELSE 0 END AS Any_Campaign_Response
+    FROM customer_features
+),
+quartiles AS (
+    SELECT
+        *,
+        NTILE(4) OVER (ORDER BY Total_Spend) AS Spend_Q,
+        NTILE(4) OVER (ORDER BY Total_Purchases) AS Purchase_Q,
+        NTILE(4) OVER (ORDER BY NumDealsPurchases) AS Deal_Q,
+        NTILE(4) OVER (ORDER BY NumWebVisitsMonth) AS WebVisit_Q,
+        NTILE(4) OVER (ORDER BY Recency) AS Recency_Q,
+        NTILE(4) OVER (ORDER BY NumCatalogPurchases + NumStorePurchases) AS OfflinePurchase_Q
+    FROM base
+),
+scores AS (
+    SELECT
+        *,
+
+        (CASE WHEN Spend_Q = 4 THEN 3 WHEN Spend_Q = 3 THEN 2 ELSE 0 END) +
+        (CASE WHEN Purchase_Q >= 3 THEN 2 ELSE 0 END) +
+        (CASE WHEN OfflinePurchase_Q >= 3 THEN 1 ELSE 0 END) +
+        (CASE WHEN Any_Campaign_Response = 1 THEN 1 ELSE 0 END) AS Premium_Score,
+
+        (CASE WHEN Deal_Q = 4 THEN 3 WHEN Deal_Q = 3 THEN 2 ELSE 0 END) +
+        (CASE WHEN WebVisit_Q >= 3 THEN 2 ELSE 0 END) +
+        (CASE WHEN Web_Share >= 0.35 THEN 1 ELSE 0 END) +
+        (CASE WHEN Spend_Q BETWEEN 2 AND 3 THEN 1 ELSE 0 END) AS Deal_Digital_Score,
+
+        (CASE WHEN Spend_Q <= 2 THEN 2 ELSE 0 END) +
+        (CASE WHEN Purchase_Q <= 2 THEN 2 ELSE 0 END) +
+        (CASE WHEN Recency_Q >= 3 THEN 1 ELSE 0 END) +
+        (CASE WHEN Any_Campaign_Response = 0 THEN 2 ELSE 0 END) AS Low_Engagement_Score
+    FROM quartiles
+)
+SELECT
+    *,
+    CASE
+        WHEN Premium_Score >= Deal_Digital_Score
+         AND Premium_Score >= Low_Engagement_Score
+            THEN 'Premium Omnichannel Buyers'
+        WHEN Deal_Digital_Score >= Premium_Score
+         AND Deal_Digital_Score >= Low_Engagement_Score
+            THEN 'Deal-Driven Digital Browsers'
+        ELSE 'Low-Engagement Occasional Buyers'
+    END AS Persona
+FROM scores;
+
+
+-- 4. CAMPAIGN RECOMMENDATIONS
+
+DROP TABLE IF EXISTS campaign_recommendations;
+
+CREATE TABLE campaign_recommendations (
+    Persona TEXT,
+    Target_Priority TEXT,
+    Best_Channel TEXT,
+    Best_Offer TEXT,
+    ROI_View TEXT
+);
+
+INSERT INTO campaign_recommendations VALUES
+('Premium Omnichannel Buyers', 'High', 'Store + Catalog + Email/Web retargeting', 'Premium bundles, loyalty rewards, early access', 'Best ROI potential'),
+('Deal-Driven Digital Browsers', 'Medium', 'Web + Email + Digital retargeting', 'Limited-time coupons, value packs, capped discounts', 'Medium ROI with margin risk'),
+('Low-Engagement Occasional Buyers', 'Low', 'Low-cost email only', 'Win-back offer only', 'Highest ad wastage risk');
+
+
+-- 5. EXPORT
+
+.headers on
+.mode csv
+
+.once output/customer_persona_scored.csv
+SELECT * FROM customer_scored;
+
+.once output/campaign_recommendations.csv
+SELECT * FROM campaign_recommendations;
+
+SELECT 'Done' AS Status;
